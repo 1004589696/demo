@@ -9,9 +9,6 @@ router.get("/", function (req, res, next) {
   loggerInfo.info("我的loggerInfo info");
   loggerInfo.debug("我的loggerInfo debug");
   loggerInfo.warn("我的loggerInfo warn");
-  loggerError.info("我的loggerError info");
-  loggerError.debug("我的loggerError debug");
-  loggerError.error("我的loggerError warn");
   res.render("index", { title: "Express" });
 });
 

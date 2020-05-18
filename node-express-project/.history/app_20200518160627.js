@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('./utils/log.js'); // 引入 log4js 日志
+require('./utils/log.js'); //
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
