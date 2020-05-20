@@ -14,4 +14,12 @@
 
 1、引入日志 log4js 
 
-2、
+===========================================
+
+1、安装 mongoose    `npm install mongoose`
+
+2、安装 mongodb 启动 `d`    `数据库`
+
+3、从 MongoDB 目录的 bin 目录中执行 mongod.exe 文件，并确保c:\data\db 文件夹存在存放数据 `C:\mongodb\bin\mongod --dbpath c:\data\db`
+
+4、安装 studio      `数据库可视化工具`
