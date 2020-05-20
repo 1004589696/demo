@@ -1,0 +1,23 @@
+.addSub{
+    display: inline-block;
+    vertical-align: top;
+    .ant-input-number{
+        vertical-align: top;
+        width: 70px;
+        .ant-input-number-handler-wrap{
+            display: none;
+        }
+        .ant-input-number-input{
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+    .ant-btn{
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+.page-title {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(77, 77, 77, 1);
+    line-height: 38px;
+}
+
+.page-content {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(230, 230, 230, 1);
+}
