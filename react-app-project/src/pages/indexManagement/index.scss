@@ -1,10 +1,248 @@
-.flex-box{
+.index-page {
     display: flex;
-    padding: 20px;
-}
-.flex-label{
-    flex: 0 0 100px;
-}
-.flex1{
-    flex: 1;
+
+    .page-left {
+        flex: 0 0 35%;
+        padding: 28px 28px 0 22px;
+        background-color: #fff;
+
+        .company {
+            display: flex;
+
+            .company-icon {
+                flex: 0 0 60px;
+                height: 60px;
+                margin: 0 20px 20px 10px;
+            }
+
+            .company-right {
+                flex: 1;
+
+                .company-name {
+                    font-size: 16px;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 36px;
+                }
+
+                .color-fd9242 {
+                    font-size: 12px;
+                    color: #fd9242;
+                }
+            }
+
+        }
+
+        .left-item {
+            display: flex;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            margin-bottom: 30px;
+
+            .item-label {
+                flex: 0 0 90px;
+            }
+
+            .item-content {
+                flex: 1;
+                text-align: right;
+
+                .redcolor {
+                    color: #F83535;
+                }
+            }
+        }
+
+        .left-button {
+            text-align: right;
+
+            .ant-btn {
+                padding: 4px 0;
+                font-size: 12px;
+                color: rgba(62, 123, 248, 1);
+            }
+        }
+
+        .app-item-title {
+            margin-bottom: 30px;
+            font-size: 12px;
+            color: rgba(77, 77, 77, 1);
+        }
+
+        .app-item {
+            display: flex;
+            margin-bottom: 40px;
+
+            .app-icon {
+                flex: 0 0 50px;
+                height: 50px;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .app-txt {
+                flex: 1;
+
+                div {
+                    font-size: 16px;
+                    color: rgba(51, 51, 51, 1);
+                }
+
+                span {
+                    font-size: 12px;
+                    color: rgba(77, 77, 77, 1);
+                }
+            }
+        }
+
+    }
+
+    .page-right {
+        flex: 1;
+        margin-left: 12px;
+
+        .ad-img {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(0deg, rgba(28, 172, 250, 1) 0%, rgba(23, 70, 210, 1) 76%);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .block-item {
+            background-color: #fff;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .right-title {
+            display: flex;
+            padding: 20px;
+
+            .right-title-label {
+                flex: 0 0 100px;
+                line-height: 32px;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgba(77, 77, 77, 1);
+            }
+
+            .right-title-content {
+                flex: 1;
+                text-align: right;
+
+                .ant-btn {
+                    padding: 4px 0;
+                    font-size: 12px;
+                    color: rgba(62, 123, 248, 1);
+                }
+
+            }
+        }
+
+        .msg-list {
+            padding-left: 40px;
+
+            li {
+                margin-bottom: 15px;
+                margin-right: 20px;
+                font-size: 12px;
+                color: rgba(77, 77, 77, 1);
+                list-style: none;
+            }
+
+            li::before {
+                content: "";
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 8px;
+                margin-right: 8px;
+                width: 6px;
+                height: 6px;
+                background: rgba(62, 123, 248, 1);
+                border-radius: 50%;
+            }
+        }
+
+        .app-list {
+            padding: 0 20px 0 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                flex: 0 0 220px;
+                height: 78px;
+                margin-bottom: 20px;
+                border: 1px solid rgba(222, 222, 222, 1);
+                border-radius: 10px;
+                list-style: none;
+                padding: 0 20px;
+
+                .app-txt {
+                    line-height: 78px;
+                    margin-left: 13px;
+                }
+            }
+
+            .opacity {
+                height: 0;
+                border: none;
+                margin-bottom: 0;
+            }
+        }
+
+        .apps-apply {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                flex: 0 0 50%;
+                width: 50%;
+                padding: 0 20px;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 63px;
+                margin-bottom: 40px;
+
+                .apps-apply-icon {
+                    flex: 0 0 60px;
+                    height: 60px;
+                    margin-right: 15px;
+                }
+
+                .apps-apply-txt {
+                    flex: 1;
+
+                    div {
+                        font-size: 16px;
+                        color: rgba(51, 51, 51, 1);
+                    }
+
+                    span {
+                        font-size: 12px;
+                        color: rgba(77, 77, 77, 1);
+                        line-height: 18px;
+                        display: inline-block;
+                        word-break: break-all;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+
+                }
+            }
+        }
+    }
 }

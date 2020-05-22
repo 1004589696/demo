@@ -1,20 +1,23 @@
 import React, { Component } from "react";
 import { Avatar, Button, Menu } from "antd";
 import { AppstoreOutlined } from "@ant-design/icons";
+import { connect } from "react-redux";
 import "./index.scss";
 const { SubMenu } = Menu;
 
-export default class LayoutIndex extends Component {
+class LayoutIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+  componentDidMount() {
   }
   render() {
     return (
       <div>
         <div className="layout-header">
           <div className="layout-header-logo">
-            <img src={require("../../assets/images/logo.png")} />
+            <img src={require("../../assets/images/logo.png")} alt="图片" />
           </div>
           <div className="layout-header-right">
             <Avatar src={require("../../assets/images/logo.png")} />
@@ -41,3 +44,15 @@ export default class LayoutIndex extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return state;
+};
+
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//   return {
+//     upList: (...args) => dispatch(actions.upList(...args)),
+//   };
+// };
+
+export default connect(mapStateToProps)(LayoutIndex);

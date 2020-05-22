@@ -6,6 +6,11 @@ export default [
     component: loadable(() => import("@/pages/loginManagement/index")),
   },
   {
+    path: "/register",
+    component: loadable(() => import("@/pages/loginManagement/register")),
+  },
+
+  {
     path: "/index",
     component: loadable(() => import("@/pages/layoutManagement/index")),
     children: [
@@ -16,25 +21,24 @@ export default [
     ],
   },
   {
-    path: "/demo",
+    path: "/authentication",
     component: loadable(() => import("@/pages/layoutManagement/index")),
     children: [
       {
-        path: "/lifecycle",
-        component: loadable(() => import("@/pages/demoManagement/lifecycle")),
+        path: "",
+        component: loadable(() =>
+          import("@/pages/authenticationManagement/index")
+        ),
       },
-      {
-        path: "/props",
-        component: loadable(() => import("@/pages/demoManagement/props")),
-      },
-      {
-        path: "/context",
-        component: loadable(() => import("@/pages/demoManagement/context")),
-      },
-      {
-        path: "/events",
-        component: loadable(() => import("@/pages/demoManagement/events")),
-      },
+    ],
+  },
+
+  
+
+  {
+    path: "/demo",
+    component: loadable(() => import("@/pages/layoutManagement/index")),
+    children: [
       {
         path: "/state",
         component: loadable(() => import("@/pages/demoManagement/setstate")),

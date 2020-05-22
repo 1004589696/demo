@@ -3,8 +3,17 @@
     padding: 0;
 }
 
+#root {
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+}
+
 img {
     border: none;
+}
+
+.fr {
+    float: right;
 }
 
 .page-title {
@@ -18,4 +27,8 @@ img {
 .page-content {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.ant-divider.ant-divider-horizontal {
+    border-top-color: rgba(222, 222, 222, 1);
 }

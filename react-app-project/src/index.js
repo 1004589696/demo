@@ -6,6 +6,9 @@ import zhCN from "antd/es/locale/zh_CN"; // 中文配置
 import store from "./store";
 import { Provider } from "react-redux";
 import "@/assets/css/index.css";
+import "@/api/index.js";
+import $axios from "@/api/api.js";
+React.$axios = $axios;
 
 ReactDOM.render(
   // <React.StrictMode>

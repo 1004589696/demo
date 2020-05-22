@@ -1,5 +1,70 @@
-.login-page-tabs {
-    .ant-tabs-bar {
-        border-bottom-color: transparent;
+.login-page,
+.register-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 100px;
+    background: url("../../assets/images/login-bg02.png") no-repeat top center;
+    background-size: cover;
+
+    &>div {
+        width: 488px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 3px 10px 0px rgba(13, 13, 12, 0.1);
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 30px 40px;
+        box-sizing: border-box;
+
+        &>img {
+            margin-bottom: 26px;
+        }
+
+        .ant-row.ant-form-item {
+            margin-bottom: 20px;
+
+            .ant-input-group-addon {
+                background-color: transparent;
+            }
+
+            .ant-input {
+                border-left: none;
+                padding-left: 0;
+            }
+
+            .ant-input:hover {
+                border-color: #d9d9d9;
+                border-right-width: 1px !important;
+            }
+
+            .ant-input:focus {
+                border-color: #d9d9d9;
+                box-shadow: none;
+            }
+        }
+
+        .ant-form-item-has-error.ant-row.ant-form-item {
+            .ant-input-group-addon {
+                color: rgba(0, 0, 0, 0.65);
+                background-color: #fff;
+                border-color: #d9d9d9;
+            }
+
+            .ant-input,
+            .ant-input:focus,
+            .ant-input:hover {
+                border-color: #d9d9d9;
+            }
+        }
+    }
+
+    .code-img {
+        width: 118px;
+        height: 40px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .oprete {
+        padding: 0;
     }
 }
