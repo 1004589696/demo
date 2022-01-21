@@ -13,7 +13,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.5.1",
-    "log4js": "^6.2.1",
+    "log4js": "^6.4.0",
     "mongoose": "^5.9.14",
     "morgan": "~1.9.1",
     "passport": "^0.4.1",
